@@ -1,0 +1,25 @@
+const ADMIN_EMAILS = [
+  'kimberlygha@gmail.com',
+  'kim@cent.co',
+  'aib@cent.co',
+  'cameron@cent.co',
+  'katie@cent.co',
+  'dee@cent.co',
+  'felix@cent.co',
+  'nico@cent.co',
+  'guy@cent.co',
+  'lena@cent.co',
+  'nicog98@gmail.com',
+  'kendra@cent.co',
+  'katie@geminder.com',
+  'hello+irl@cent.co',
+  'gwen.c.obrien@gmail.com',
+  'kris@cent.co',
+  'liviu@cent.co',
+  'mark@cent.co',
+  'hello+news@cent.co',
+  'kris+payments@cent.co',
+  'kris+test@cent.co',
+];
+
+export default ADMIN_EMAILS;

@@ -1,0 +1,21 @@
+CREATE TABLE `app_config` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `creator_id` int NOT NULL,
+  `subdomain` varchar(50) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `description` varchar(500) DEFAULT NULL,
+  `profile_image` varchar(2048) DEFAULT NULL,
+  `style` text,
+  `social_links` text,
+  `background_image` varchar(2048) DEFAULT NULL,
+  `nft_factory_address` varchar(42) DEFAULT NULL,
+  `nft_factory_txid` varchar(66) DEFAULT NULL,
+  `create_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `is_private` boolean DEFAULT FALSE,
+  `can_send_email` boolean DEFAULT TRUE,
+  `status` char(4) DEFAULT 'DFLT',
+  `adult` boolean DEFAULT FALSE,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `subdomain` (`subdomain`),
+  KEY `creator_id` (`creator_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

@@ -1,0 +1,44 @@
+.vscode
+
+# Bundle
+bundle.js
+
+test_data/
+
+# Env variables
+.env
+
+# Logs
+.logs/
+logs/
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Coverage
+coverage
+
+# Transpiled files
+build/
+
+# VS Code
+.vscode
+!.vscode/tasks.js
+
+# JetBrains IDEs
+.idea/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Misc
+.DS_Store
+
+# Tmp folder for migration mgmt
+.db/

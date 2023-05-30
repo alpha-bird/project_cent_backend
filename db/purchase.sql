@@ -1,0 +1,23 @@
+CREATE TABLE `purchase` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `app_id` int NOT NULL,
+  `creator_id` int NOT NULL,
+  `recipient_id` int NOT NULL,
+  `source_type` varchar(20) NOT NULL,
+  `source_id` int NOT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `nft_amount` int NOT NULL,
+  `token_price` int NOT NULL,
+  `total_price` int NOT NULL,
+  `buyer_fee` int NOT NULL,
+  `seller_fee` int NOT NULL,
+  `intent_id` varchar(40) DEFAULT NULL,
+  `ip` varchar(40) DEFAULT NULL,
+  `status` char(15) DEFAULT 'CREATED' NOT NULL,
+  `create_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `update_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `creator_id` (`creator_id`),
+  KEY `recipient_id` (`recipient_id`),
+  KEY `intent_id` (`intent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

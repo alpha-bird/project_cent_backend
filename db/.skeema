@@ -1,0 +1,13 @@
+schema=aib
+default-character-set=utf8mb4
+default-collation=utf8mb4_0900_ai_ci
+generator=skeema:1.5.3-community
+
+[production]
+flavor=mysql:8.0
+host=localhost
+port=3307
+user=root
+password=xxx_root_password
+allow-unsafe
+allow-auto-inc=int, int unsigned, bigint unsigned
